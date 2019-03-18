@@ -1,6 +1,6 @@
 PREFIX=/usr
 ROOT=
-SOURCE=iso-schematron-xslt1
+SOURCE=iso_schematron_xslt1
 SHAREDIR=${ROOT}${PREFIX}/share/${SOURCE}
 
 install:
