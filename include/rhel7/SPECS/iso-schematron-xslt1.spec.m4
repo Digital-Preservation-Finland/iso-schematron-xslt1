@@ -38,7 +38,7 @@ make install PREFIX="%{_prefix}" ROOT="%{buildroot}"
 
 %files
 %defattr(-,root,root,-)
-/usr/share/iso-schematron-xslt1/*
+/usr/share/iso_schematron_xslt1/*
 
 # TODO: For now changelog must be last, because it is generated automatically
 # from git log command. Appending should be fixed to happen only after %changelog macro
