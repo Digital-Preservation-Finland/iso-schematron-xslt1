@@ -17,7 +17,6 @@ Group:          System Environment/Library
 License:        MIT
 URL:            https://www.digitalpreservation.fi
 Source0:        %{file_prefix}-v%{file_version}%{?file_release_tag}-%{file_build_number}-g%{file_commit_ref}.%{file_ext}
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
 Requires:       libxslt
 
@@ -31,7 +30,6 @@ ISO Schematron implementation for XSLT tools.
 make install PREFIX="%{_prefix}" ROOT="%{buildroot}"
 
 %files
-%defattr(-,root,root,-)
 /usr/share/iso_schematron_xslt1/*
 %doc README.rst
 
